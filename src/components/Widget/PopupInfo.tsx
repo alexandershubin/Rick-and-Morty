@@ -33,7 +33,12 @@ const PopupInfo = ({ result, hidePopup }: IPopupInfo) => {
                 <span className="widget-list__span">
                     {result?.location.name}
                 </span>
-                <a className="widget-list__link" href={result?.location.url}>
+                <a
+                    className="widget-list__link"
+                    href={result?.location.url}
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     {result?.location.url}
                 </a>
             </p>
